@@ -133,3 +133,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [BASE_DIR/'static']
+
+# 消費税率
+TAX_RATE = 0.1
