@@ -23,6 +23,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     #Items
     path('items/<str:pk>/', views.ItemDetailView.as_view()),
+     path('categories/<str:pk>/', views.CategoryListView.as_view()),
+    path('tags/<str:pk>/', views.TagListView.as_view()),
     path('', views.IndexListView.as_view()),  # トップページ
 
     #cart
